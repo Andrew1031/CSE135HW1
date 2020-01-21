@@ -1,0 +1,26 @@
+[debug] [2020-01-21T08:31:13.054Z] ----------------------------------------------------------------------
+[debug] [2020-01-21T08:31:13.056Z] Command:       C:\Users\15102\DOWNLO~1\firebase-tools-instant-win.exe C:\Users\15102\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase serve
+[debug] [2020-01-21T08:31:13.056Z] CLI Version:   7.5.0
+[debug] [2020-01-21T08:31:13.056Z] Platform:      win32
+[debug] [2020-01-21T08:31:13.056Z] Node Version:  v8.16.0
+[debug] [2020-01-21T08:31:13.057Z] Time:          Tue Jan 21 2020 00:31:13 GMT-0800 (Pacific Standard Time)
+[debug] [2020-01-21T08:31:13.057Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2020-01-21T08:31:13.064Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-01-21T08:31:13.065Z] > authorizing via signed-in user
+[debug] [2020-01-21T08:31:13.065Z] [iam] checking project cse135hw1-e6e52 for permissions ["firebase.projects.get"]
+[debug] [2020-01-21T08:31:13.066Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cse135hw1-e6e52:testIamPermissions  
+
+[debug] [2020-01-21T08:31:13.378Z] <<< HTTP RESPONSE 200
+[debug] [2020-01-21T08:31:13.380Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cse135hw1-e6e52  
+ 
+[debug] [2020-01-21T08:31:13.692Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\15102\Desktop\CSE135 Hw 1'...
+[info] 
+[debug] [2020-01-21T08:31:13.697Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/cse135hw1-e6e52/webApps/-/config  
+ 
+[debug] [2020-01-21T08:31:14.065Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] +  hosting: Local server: http://localhost:5000
+[info] Shutting down...
