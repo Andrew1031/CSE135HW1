@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images</title>
+    <link rel="stylesheet" href="/styles/main.css"/>
+</head>
+
+<body>
+<header>
+<h1 class="title">Images</h1> 
+</header>
+
+<footer>
+<nav>
+    <a href="index.html" id="indexLink">Homepage</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="form.html" id="formLink">Form</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="table_and_lists.html" id="table_and_listsLink">Table and Lists</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="externals.html" id="externalsLink">Externals</a>
+</nav>
+</footer>
+<br>
+<br>
+<br>
+<hr>
+
+<h2 class="topic" style="font-size:48px;">img tag</h2>
+<img src="images/jokergif.gif" alt="Joker dancing gif">
+<img src="images/animatedgif.gif" alt="animated gif">
+<img src="images/avengersjpeg.jpeg" alt="avengers jpeg">
+<img src="images/groot.png" alt="i am groot png">
+<img src="images/animatedpng.png" alt="animated png">
+<img src="images/arthurfleckwebp.webp" alt="arthur webp">
+<img src="images/deadpoolsvg.svg" alt="deadpool svg">
+<br>
+<hr>
+
+<h2 class="topic" style=font-size:48px;>picture tag</h2>
+<p style="font-size:50px; text-align:center"><b>resize the browser (ctrl+ or ctrl-) to see varying pictures</b></p>
+<picture>
+<source media="(min-width: 1350px)" srcset="images/instagram.jpg">
+<source media="(min-width: 1000px)" srcset="images/group.png">
+<img src="images/youtube.png" alt="youtube logo">
+</picture>
+<picture>
+<source media="(min-width: 955px)" srcset="images/spongebobgif.gif">
+<source media="(min-width: 450px)" srcset="images/animatedgif2.gif">
+<img src="images/twittergif.gif" alt="twitter icon">
+</picture>
+<picture>
+<source media="(min-width: 1150px)" srcset="images/avengersgif.gif">
+<source media="(min-width: 550px)" srcset="images/avengersjpeg2.jpg">
+<img src="images/avengersjpeg.jpeg" alt="avengers">
+</picture>
+<picture>
+<source media="(min-width:1400px)" srcset="images/darkknight.jpg">
+<source media="(min-width:900px)" srcset="images/darkknightposter.jpg">
+<img src="images/baneicon.png" alt="bane">
+</picture>
+<picture>
+<source media="(min-width:1300px)" srcset="images/xmen.jpg">
+<source media="(min-width:900px)" srcset="images/wolverine.jpg">
+<img src="images/x23.webp" alt="x-23">
+</picture>
+<picture>
+<source media="(min-width:1300px)" srcset="images/nba2k.svg">
+<source media="(min-width:600px)" srcset="images/animatedpng2.png">
+<img src="images/nba2k20.jpg" alt="nba 2k20 cover">
+</picture>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>

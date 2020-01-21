@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="/styles/main.css"/>
+</head>
+<body>
+<header>
+<h1 class="title">Form</h1> 
+</header>
+<footer>
+<nav>
+    <a href="index.html" id="indexLink">Homepage</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="images.html" id="imagesLink">Images</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="table_and_lists.html" id="table_and_listsLink">Table and Lists</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="externals.html" id="externalsLink">Externals</a>
+</nav>
+</footer>
+<br>
+<br>
+<br>
+<hr>
+
+<h2 class="topic">Fun facts survey</h2>
+
+<form oninput="total.value=parseInt(AdditionalHouseholdMembers.value)+parseInt(Yourself.value)" 
+action="http://httpbin.org/post" method="POST" id="survey" autocomplete="on">
+    <fieldset>
+        <legend>Personal Information:</legend>
+        First name: <input type="text" name="First Name" placeholder="First name" required autofocus maxlength="15"><br><br>
+        Last name: <input type="text" name="Last Name" placeholder="Last name" required maxlength="15"><br><br>
+        How many people live in your household? 
+            <input type="range" id="AdditionalHouseholdMembers" name="AdditionalHouseholdMembers" value="3"> +
+            <input type="number" id="Yourself" name="Yourself" value="1"> = 
+            <output name="total" for="AdditionalHouseholdMembers Yourself"></output><br><br>
+        Social security number: <input type="text" name="Social security number" disabled><br><br>
+        Contact number: <input type="tel" name="Cell phone number"><br><br>
+        Email address: <input type="email" name="E-mail address"><br><br>
+        Age: <input type="number" name="Age"><br><br>
+        Country: <input type="text" value="United States" name="Country" readonly><br><br>
+        Zip code: <input type="text" name="Zip code" placeholder="Zip code (5 digits)" pattern="[0-9]{5}"><br><br>
+        Birth week : <input type="week" name="Birth Week"><br><br>
+        Birth month: <input type="month" name="Birth Month"><br><br>
+        Date of birth: <input type="date" name="Date of Birth"><br><br>
+        Today's date: <input type="date" name="Today's Date"><br><br>
+        Current time: <input type="time" title="Current time in your time zone" name="Current Time"><br><br>
+    </fieldset>
+    <p>You are now half way down with the survey! <progress value="50" max="100"></progress><br> 
+        Please proceed to the next section:
+    </p>
+    <fieldset>  
+        <legend>Fun facts</legend>
+        Favorite color: <input type="color" name="Favorite Color"><br><br>
+        Favorite website: <input type="url" name="Favorite website"><br><br>
+        Favorite music genre: <br>
+        <label for="rap">Rap</label>
+        <input type="radio" name="Favorite music:" id="rap" value="rap"><br>
+        <label for="rock">Rock</label>
+        <input type="radio" name="Favorite music:" id="rock" value="rock"><br>
+        <label for="country">Country</label>
+        <input type="radio" name="Favorite music:" id="country" value="country"><br>
+        <label for="electronic">Electronic</label>
+        <input type="radio" name="Favorite music:" id="electronic" value="electronic"><br>
+        <label for="classical">Classical</label>
+        <input type="radio" name="Favorite music:" id="classical" value="classical"><br>
+        <label for="other">Other</label>
+        <input type="text" name="Favorite music:" id="other" placeholder="Please specifiy music genre"><br><br>
+        What is your computer password: <input type="password" name="Computer password" maxlength="15"><br><br>
+        What is something you've always wanted to look up but never had the chance? 
+        <input type="search" name="What to search"><br><br>
+        Next dentist appointment: <input type="datetime-local" name="Dentist appointment"><br><br>
+        Upload your favorite wallpaper or picture: <input type="file" name="Favorite pic" accept="image/*"><br><br>
+        Upload a document(s) or file(s) that describes yourself: <input type="file" name="UploadedFiles" multiple><br><br>
+        <label>How do you get to school?</label><br>
+        Walking <input type="checkbox" name="Form of transportation" value="Walking" checked tabindex="1"><br>
+        Running <input type="checkbox" name="Form of transportation" value="Running" tabindex="2"><br>
+        Driving <input type="checkbox" name="Form of transportation" value="Driving" tabindex="3"><br>
+        Biking  <input type="checkbox" name="Form of transportation" value="Biking" tabindex="4"><br>
+        Skating <input type="checkbox" name="Form of transportation" value="Skating" tabindex="5"><br><br>
+        How often do you go to the gym? <input type="range" min="0" max="7" name="Number of times to the gym per week"><br><br>
+        What type of computer do you use? <input list="computerType" name="Computer type">
+        <datalist id="computerType">
+            <option value="Sony">
+            <option value="Apple">
+            <option value="Alienware">
+            <option value="Microsoft">
+            <option value="Dell">
+            <option value="Acer">
+            <option value="HP">
+            <option value="Lenovo">
+            <option value="Toshiba">
+        </datalist><br><br>
+        Favorite movie out of this list:
+        <select name="Favorite movie">
+            <optgroup label="Comic book movies">
+                <option value="Joker">Joker</option>
+                <option value="Avengers">Avengers</option>
+                <option value="Guardians of the Galaxy">Guardians of the Galaxy</option>
+                <option value="Captain America">Captain America</option>
+                <option value="Deadpool">Deadpool</option>
+            </optgroup>
+            <optgroup label="Comedy">
+                <option value="Crazy Rich Asians">Crazy Rich Asians</option>
+                <option value="Shazam">Shazam</option>
+                <option value="Once upon a time in hollywood">Once upon a time in hollywood</option>
+            </optgroup>
+            <optgroup label="Action">
+                <option value="Mad max">Mad Max</option>
+                <option value="Django">Django</option>
+                <option value="Star wars">Star wars</option>
+            </optgroup>
+        </select><br><br>
+        Would you rather be rich or poor? <input type="hidden" value="rich" name="Rich or poor?"><br><br>
+        Amount of people who have completed this survey: <meter value="0" max="10"></meter><br>
+        You can be the first! <br><br>
+        Please give feedback on this survey and note and tips for improvement: <br>
+        <textarea name="Feedback" placeholder="Give feedback here"></textarea>
+    </fieldset>
+    <b>To clear the form and start over, press the button below</b><br>
+    <input type="reset" value="Clear"><br><br>
+    <input type="button" value="Don't click here"><br><br>
+    <b>Press any one of these buttons to submit your survey</b>
+    <br>
+    <input type="image" src="images/forward.png" alt="Submit image" width="30" height="30">
+    <input type="submit" value="Submit input">
+</form>
+<button name="Submit Button" form="survey">Submit button</button>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Externals</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/radiobox.css/1.0.1/css/radiobox.min.css"/>
+    <style>
+    @font-face 
+    {
+        font-family: "Kimberle";
+        src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf);
+    }
+
+    h1.topic 
+    { 
+        font-family: "Kimberle", sans-serif;
+    }
+    </style>
+</head>
+
+<body>
+<header>
+<h1 class="topic">Externals</h1> 
+</header>
+<footer>
+<nav>
+    <a href="index.html" id="indexLink">Homepage</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="images.html" id="imagesLink">Images</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="form.html" id="formLink">Form</a>
+    <span class="noWhiteSpace">&nbsp; &nbsp; &nbsp;</span>
+    <a href="table_and_lists.html" id="table_and_listsLink">Table and Lists</a>
+</nav>
+</footer>
+<br>
+<br>
+<br>
+<hr>
+
+<h1 class="topic">External CSS</h1>
+<p>Select your option(s) below: </p>
+<input type="radio" class="radiobox-boing">Pizza<br>
+<input type="radio" class="radiobox-boing">Hamburgers<br>
+<input type="radio" class="radiobox-boing">Burritos<br>
+<input type="radio" class="radiobox-boing">Tacos<br>
+<input type="radio" class="radiobox-boing">Fried Chicken<br>
+<br>
+<hr>
+
+<h1 class="topic">Pages</h1>
+
+<iframe src="https://piazza.com/class/k0wpwuyamj0560" width="300" height="300"></iframe>
+<iframe src="https://gradecalculator.com/" width="300" height="300"></iframe>
+<hr>
+
+<h1 class="topic">Remote video</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zAGVQLHvwOY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+<hr>
+
+<h1 class="topic">Images</h1>
+<img src="https://img.bleacherreport.net/img/images/photos/003/847/793/d550ae6967e794ef2b00d7c2d8aa5877_crop_north.jpg?h=533&w=800&q=70&crop_x=center&crop_y=top"
+alt="Brock Lesnar photo" height="600" width="550">
+<img src="https://www.mobafire.com/images/champion/skins/landscape/yasuo-high-noon.jpg" alt="Yasuo 
+League of Legends photo" height="600" width="550">
+<img src="https://cdn.vox-cdn.com/thumbor/SOYCKziWNc6ZufGsVsa3Il3iX50=/0x0:2158x1068/1200x800/filters:focal(1159x295:1503x639)/cdn.vox-cdn.com/uploads/chorus_image/image/49618171/capammain.0.jpg"
+alt="Captain America photo" height="600" width="650">
+<hr>
+
+<h1 class="topic">Scripts</h1>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+<script>
+var toShow = numeral('21st');
+var returnValue = toShow.value();  
+document.write("Today is January 21st. This script converts the string 21st to a number and displays it: The due date of this assignment is January " + returnValue);
+</script> 
+<br>
+
+<script src="https://cdn.jsdelivr.net/gh/fcmam5/nightly.js@v1.0/dist/nightly.min.js"></script>
+<script>
+var Nightly = new Nightly();
+Nightly.darkify();
+</script>
+<br>
+<hr>
+
+<h1 class="topic">Links</h1>
+<a href="https://www.twitch.tv/">Twitch</a><br>
+<a href="https://www.youtube.com/">YouTube</a><br>
+<a href="http://espn.com/">ESPN</a><br>
+<a href="https://www.reddit.com/r/UCSD/">Reddit</a><br>
+<a href="https://piazza.com/class/jyqcgf4eydw6vl">Piazza</a><br>
+<br>
+<hr>
+
+
+
+<h1 class="topic">Page load times:</h1>
+<ol>
+    <li>1/21/2020 12:35 AM : DOMContentLoaded: 184 ms, Load:2.71s</li>
+    <li>1/21/2020 12:42 AM : DOMContentLoaded: 156 ms, Load:2.41s</li>
+    <li>1/21/2020 12:46 AM : DomContentLoaded: 217 ms, Load:2.26s</li>
+    <li>1/21/2020 12:50 AM : DomContentLoaded: 160 ms, Load:2.80s</li>
+    <li>1/21/2020 12:52 AM : DomContentLoaded: 155ms, Load:2.86s</li>
+    <li>1/21/2020 12:55 AM : DomContentLoaded:  ms, Load:s</li>
+    <li>1/21/2020 12:46 AM : DomContentLoaded: 217 ms, Load:2.26s</li>
+    <li>1/21/2020 12:46 AM : DomContentLoaded: 217 ms, Load:2.26s</li>
+    <li>1/21/2020 12:46 AM : DomContentLoaded: 217 ms, Load:2.26s</li>
+    <li>1/21/2020 12:46 AM : DomContentLoaded: 217 ms, Load:2.26s</li>
+</ol>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.7.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
